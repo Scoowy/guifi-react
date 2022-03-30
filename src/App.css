@@ -1,0 +1,115 @@
+.app {
+  height: 100%;
+  background-color: var(--col-primary);
+  color: whitesmoke;
+  width: 100vw;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.search_field {
+  display: flex;
+}
+
+.search_field > label {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.search_field > label::after {
+  content: ":";
+}
+
+.search_field > input[type="text"] {
+  height: 2.5rem;
+  color: whitesmoke;
+
+  font-size: 1rem;
+  border: none;
+  border-bottom: 5px solid darkblue;
+  background-color: transparent;
+  margin: 0 1rem;
+  transition: border 250ms ease-in-out;
+}
+
+.search_field > input[type="text"]:hover,
+.search_field > input[type="text"]:focus {
+  border-bottom: 5px solid rgb(101, 142, 255);
+}
+
+.search_field > input[type="text"]:focus-visible {
+  outline: none;
+}
+
+.search_field > button {
+  font-size: 1rem;
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  border: 5px solid darkblue;
+  min-width: 2.5rem;
+  background-color: var(--col-primary);
+  transition: box-shadow 500ms ease-in-out;
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  line-height: 0rem;
+  text-transform: capitalize;
+}
+
+.search_field > button:hover {
+  box-shadow: 3px 3px 0px 0px rgb(101, 142, 255);
+}
+
+.search_field > button:active {
+  transition: box-shadow 50ms ease-in-out;
+  box-shadow: 3px 3px 0px 0px rgb(118, 253, 77);
+}
+
+.gif_collection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.gif_collection-gif {
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+  border: 5px solid darkblue;
+  transition: box-shadow 500ms ease-in-out;
+  position: relative;
+  background-color: rgb(101, 142, 255);
+}
+
+.gif_collection-gif:hover {
+  box-shadow: 3px 3px 0px 0px rgb(101, 142, 255);
+}
+
+.gif_collection-gif > .gif {
+  width: 100%;
+}
+
+.gif_collection-gif > .user {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background-color: rgb(101, 142, 255);
+  padding: 0.5rem 1rem;
+  color: whitesmoke;
+  text-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.gif_collection-gif > .description {
+  padding: 0.6rem 1rem;
+}

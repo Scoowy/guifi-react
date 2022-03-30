@@ -1,0 +1,27 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: darkblue;
+}
+
+.navbar-title {
+  color: whitesmoke;
+}
+
+.navbar-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-menu ul > li > a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+
+.navbar-menu ul > li > a:hover {
+  color: deepskyblue;
+}
